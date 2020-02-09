@@ -1,0 +1,14 @@
+#!/bin/bash
+#Timetables for public transportation lines given by an argument.
+#Opens all timetable if no argument is given.
+
+if [ $# -eq 0 ]
+then
+        xdg-open https://www.zditm.szczecin.pl/en/passenger/timetables,by-line
+elif [ $1 -eq 5 ]
+then
+        xdg-open https://www.zditm.szczecin.pl/en/passenger/timetables,line,5
+elif [ $1 -eq 1 ]
+then
+        xdg-open https://www.zditm.szczecin.pl/en/passenger/timetables,line,1
+fi

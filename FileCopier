@@ -1,0 +1,15 @@
+#!/bin/bash
+# Old script designed to copy specific files. However can be easily repurposed.
+
+if [ $# -lt 1 ]
+then
+        echo "Not enough arguments!"
+        exit 1
+fi
+
+mkdir -p <path>
+for i in {0..7}
+do
+cp <path>
+
+done
